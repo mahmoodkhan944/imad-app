@@ -6,20 +6,40 @@ var app = express();
 app.use(morgan('combined'));
 
 
-var articleOne = {
-  title: 'Article One | Mahmood Khan',
-  heading: 'Aryicle One',
-  date: 'Aug 8, 2017',
-  content: `
-     <p>
-        This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article.
-     </p>
-     <p>
-        This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article.
-     </p>
-     <p>
-        This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article.
-     </p>`
+var articles = {
+    articleOne: {
+     title: 'Article One | Mahmood Khan',
+     heading: 'Article One',
+     date: 'Aug 8, 2017',
+     content: `
+        <p>
+           This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article.
+        </p>
+        <p>
+           This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article.
+        </p>
+        <p>
+           This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article.
+        </p>`
+    },
+    articleTwo: {
+        title: 'Article Two | Mahmood Khan',
+        heading: 'Article Two',
+        date: 'Aug 8, 2017',
+        content: `
+            <p>
+                This is the content for my second article.
+            </p>`
+    },
+    articleThree: {
+        title: 'Article Three | Mahmood Khan',
+        heading: 'Article Three',
+        date: 'Aug 8, 2017',
+        content: `
+            <p>
+                This is the content for my third article.
+            </p>`
+    }
 };
 
 function createTemplate (data) {
