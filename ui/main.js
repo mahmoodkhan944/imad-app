@@ -8,5 +8,5 @@ element.innerHTML = 'New value';
 // Move the image
 var img = document.getElementById('madi');
 img.onclick = function () {
-  img.style.margineLeft = '100px';  
+  img.style.marginLeft = '100px';  
 };
