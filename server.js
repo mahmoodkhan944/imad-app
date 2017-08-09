@@ -102,8 +102,6 @@ app.get('/submit-name', function(req, res) { // URL: /submt-name?name=xxxxx
 app.get('/:articleName', function (req, res){
     // articleName == aticle-one
     // articles[articleName] == {} content object for article one
-    var articleName = req.params.articleName;
-  res.send(createTemplate(articles[articleName])); 
 });
 
 app.get('/ui/style.css', function (req, res) {
