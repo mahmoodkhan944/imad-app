@@ -61,7 +61,7 @@ submit.onclick = function () {
 //Change the text of the main-text div
 var element = document.getElementById('main-text');
 
-element.innerHTML = 'New value';
+element.innerHTML = '';
 
 // Move the image
 var img = document.getElementById('madi');
